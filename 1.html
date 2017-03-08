@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>尚硅谷 HTML5</title>
+    <link rel="stylesheet" href="img/reset.css">
+    <link rel="shortcut icon" type="image/x-icon" href="123.ico">
+    <style type="text/css">
+        html{
+            font-size:100px;
+        }
+        body{
+            background:#ccc;
+            padding: 0 .15rem;
+        }
+        .wrapper{
+
+        }
+        .header img{
+            width:.42rem;
+            float:left;
+            margin-right:.08rem;
+        }
+        .header{
+            padding:.1rem 0 .1rem 30%;
+            margin-bottom:1px;
+            line-height: 1.5;
+            background:#fff;
+        }
+        .header h3{
+            font-weight:normal;
+        }
+        .header p{
+            font-size:0.14rem;
+        }
+        .order-state{
+            height:.70rem;
+            background:#fff;
+            overflow:hidden;
+        }
+        .state{
+            overflow:hidden;
+            margin:.30rem 10%;
+            position:relative;
+        }
+        .state:before{
+            content:'';
+            display:block;
+            height:1px;
+            width:100%;
+            background:#ccc;
+            position:absolute;
+            top:.09rem;
+            left:0;
+            z-index:1;
+        }
+        .state li{
+            background:url('img/cp_choose1.png') no-repeat;
+            height:.18rem;
+            float:left;
+            width:33.33%;
+            position:relative;
+            z-index:2;
+
+        }
+        .state li:nth-child(2){
+            background-position:50% 0;
+        }
+        .state li:nth-child(3){
+            background-position:100% 0;
+        }
+        .body{
+            margin-top:.15rem;
+            background:#fff;
+            padding:.35rem 0 0 0;
+            position:relative;
+        }
+        .body:after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .many{
+            line-height:.30rem;
+            width:10%;
+            background:#EB3C3C;
+            text-align:center;
+            position:absolute;
+            top:-.1rem;
+            white-space:nowrap;
+        }
+        .image{
+            width:20%;
+
+        }
+        .list-content span{
+            vertical-align:75px;
+        }
+        .list-content span:nth-of-type(1){
+            display:inline-block;
+            width:47%;
+        }
+        .list-content span:nth-of-type(2){
+            display:inline-block;;
+            width:15%;
+        }
+        .list-content span:nth-of-type(3){
+            display:inline-block;;
+            width:15%;
+            text-align:right;
+        }
+    </style>
+
+</head>
+<body>
+<div class='wrapper'>
+    <div class='header'>
+        <img src='img/od_schedule1.png'/>
+        <h3>已完成</h3>
+        <p>预计送达：12:00</p>
+    </div>
+    <div class='order-state'>
+        <ul class='state'>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class='body'>
+        <p class='many'>订单详情</p>
+        <div class='list-content'>
+            <img src='img/1.png' class='image'/>
+            <span>沙拉</span>
+            <span>X1</span>
+            <span>23</span>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    //var box1=document.getElementsByClassName('box1-sub');
+    var box2 = document.getElementById('p1');
+    //var box2=document.getElementsByTagName("p");
+    console.log(box2);
+    console.log(box2.firstChild);
+    console.log(box2.firstChild.firstChild);
+
+</script>
+
+</body>
+</html>
